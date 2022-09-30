@@ -1,9 +1,9 @@
-package com.dev.bookstoreapi.services;
+package com.chagas.bookstoreapi.services;
 
-import com.dev.bookstoreapi.domains.Categoria;
-import com.dev.bookstoreapi.domains.Livro;
-import com.dev.bookstoreapi.repositories.CategoriaRepository;
-import com.dev.bookstoreapi.repositories.LivroRepository;
+import com.chagas.bookstoreapi.domains.Categoria;
+import com.chagas.bookstoreapi.domains.Livro;
+import com.chagas.bookstoreapi.repositories.CategoriaRepository;
+import com.chagas.bookstoreapi.repositories.LivroRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

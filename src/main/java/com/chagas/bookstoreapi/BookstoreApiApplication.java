@@ -1,4 +1,4 @@
-package com.dev.bookstoreapi;
+package com.chagas.bookstoreapi;
 
 
 import org.springframework.boot.SpringApplication;

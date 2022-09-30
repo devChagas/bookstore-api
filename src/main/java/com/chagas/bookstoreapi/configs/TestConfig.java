@@ -1,6 +1,6 @@
-package com.dev.bookstoreapi.configs;
+package com.chagas.bookstoreapi.configs;
 
-import com.dev.bookstoreapi.services.DBService;
+import com.chagas.bookstoreapi.services.DBService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
-package com.dev.bookstoreapi.repositories;
+package com.chagas.bookstoreapi.repositories;
 
-import com.dev.bookstoreapi.domains.Livro;
+import com.chagas.bookstoreapi.domains.Livro;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

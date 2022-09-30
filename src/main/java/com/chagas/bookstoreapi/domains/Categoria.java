@@ -1,4 +1,4 @@
-package com.dev.bookstoreapi.domains;
+package com.chagas.bookstoreapi.domains;
 
 import javax.persistence.*;
 import java.io.Serializable;

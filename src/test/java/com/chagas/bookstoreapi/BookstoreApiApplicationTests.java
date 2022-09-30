@@ -1,4 +1,4 @@
-package com.dev.bookstoreapi;
+package com.chagas.bookstoreapi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
