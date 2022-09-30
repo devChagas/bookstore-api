@@ -22,7 +22,6 @@ public class DevConfig {
         if (strategy.equals("create")){
             this.dbService.instaciaBaseDeDados();
         }
-        System.out.println("ERRRORRRR");
         return false;
     }
 
