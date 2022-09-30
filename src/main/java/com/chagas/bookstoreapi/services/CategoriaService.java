@@ -4,10 +4,13 @@ import com.chagas.bookstoreapi.domains.Categoria;
 import com.chagas.bookstoreapi.dtos.CategoriaDTO;
 import com.chagas.bookstoreapi.repositories.CategoriaRepository;
 import com.chagas.bookstoreapi.services.exceptions.ObjectNotFoundException;
+
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import javax.xml.crypto.Data;
 import java.util.List;
 import java.util.Optional;
 
@@ -41,6 +44,14 @@ public class CategoriaService {
 
     public void delete(Integer id) {
         findById(id);
-        categoriaRepository.deleteById(id);
+        try {
+            categoriaRepository.deleteById(id);
+        }
+        catch (DataIntegrityViolationException e) {
+            throw new com.chagas.bookstoreapi.services.exceptions.DataIntegrityViolationException("Objeto não pode ser deletado!" +
+                    " Possui livros associados");
+        }
+
+
     }
 }
