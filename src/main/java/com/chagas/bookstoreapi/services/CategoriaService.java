@@ -5,6 +5,7 @@ import com.chagas.bookstoreapi.dtos.CategoriaDTO;
 import com.chagas.bookstoreapi.repositories.CategoriaRepository;
 import com.chagas.bookstoreapi.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -36,5 +37,10 @@ public class CategoriaService {
         obj.setNome(objDTO.getNome());
         obj.setDescricao(objDTO.getDescricao());
         return categoriaRepository.save(obj);
+    }
+
+    public void delete(Integer id) {
+        findById(id);
+        categoriaRepository.deleteById(id);
     }
 }
